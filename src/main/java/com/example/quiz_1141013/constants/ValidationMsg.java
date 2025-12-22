@@ -12,11 +12,19 @@ public class ValidationMsg {
 
 	public static final String END_DATE_ERROR = "End Date error!!";
 
-	public static final String QUESSTION_ID_ERROR = "Question Id error!!";
-
 	public static final String QUESTION_ERROR = "Question error!!";
 
 	public static final String TYPE_ERROR = "Type error!!";
 	
 	public static final String QUIZ_ID_ERROR = "Quiz Id error!!";
+	
+	public static final String USER_NAME_IS_EMPTY = "User Name Is Empty!!";
+	
+	public static final String EMAIL_IS_EMPTY = "Email Is Empty!!";
+	
+	public static final String USER_AGE_ERROR = "User Age Error!!";
+	
+	public static final String QUESSTION_ID_ERROR = "Question Id error!!";
+	
+	public static final String ANSWERVO_IS_EMPTY = "AnswerVo Is Empty!!";
 }

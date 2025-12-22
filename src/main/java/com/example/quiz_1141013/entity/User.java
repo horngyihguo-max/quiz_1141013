@@ -9,24 +9,35 @@ import jakarta.persistence.Table;
 @Table(name = "user")
 public class User {
 
-	@Id
-	@Column(name = "email")
-	private String email;
-
-	@Column(name = "account")
-	private String account;
+	@Column(name = "name")
+	private String name;
 
 	@Column(name = "password")
 	private String password;
 
-	public User() {
-		super();
+	@Id
+	@Column(name = "email")
+	private String email;
+
+	@Column(name = "phone")
+	private String phone;
+
+	@Column(name = "age")
+	private int age;
+
+	public String getName() {
+		return name;
 	}
 
-	public User(String email, String account, String password) {
-		super();
-		this.email = email;
-		this.account = account;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
 		this.password = password;
 	}
 
@@ -38,20 +49,20 @@ public class User {
 		this.email = email;
 	}
 
-	public String getAccount() {
-		return account;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setAccount(String account) {
-		this.account = account;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	public String getPassword() {
-		return password;
+	public int getAge() {
+		return age;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 }

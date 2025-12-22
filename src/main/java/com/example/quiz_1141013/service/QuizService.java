@@ -11,7 +11,7 @@ import org.springframework.util.StringUtils;
 
 import com.example.quiz_1141013.constants.ResMessage;
 import com.example.quiz_1141013.constants.Type;
-import com.example.quiz_1141013.dao.QuestionDAo;
+import com.example.quiz_1141013.dao.QuestionDao;
 import com.example.quiz_1141013.dao.QuizDao;
 import com.example.quiz_1141013.entity.Question;
 import com.example.quiz_1141013.request.QuizCreateReq;
@@ -33,7 +33,7 @@ public class QuizService {
 	private QuizDao quizDao;
 
 	@Autowired
-	private QuestionDAo questionDao;
+	private QuestionDao questionDao;
 
 	/* rollbackFor = Exception.class: 表示只要此方法發生了 Exception ，寫一半的資料都會回溯 */
 	@Transactional(rollbackFor = Exception.class)

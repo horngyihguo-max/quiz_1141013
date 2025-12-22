@@ -6,9 +6,12 @@ public enum ResMessage {
 	DATE_ERROR(400, "Date Error!!"), //
 	TYPE_ERROR(400, "typeError!!"), //
 	PLEASE_LOGIN_FIRST(400, "Please Login First!!"), //
-	OPTIONS_SIZE_ERROR(400, "Options Size Error!!"),//
-	QUIZ_ID_MISMATCH(400, "Quiz Id Mismatch!!"),//
-	QUIZ_NOT_FOUND(404, "Quiz Not Found!!");//
+	OPTIONS_SIZE_ERROR(400, "Options Size Error!!"), //
+	QUIZ_ID_MISMATCH(400, "Quiz Id Mismatch!!"), //
+	QUIZ_NOT_FOUND(404, "Quiz Not Found!!"), //
+	QUESTION_NOT_FOUND(404, "Qusetion Not Found!!"),//
+	OPTION_NAME_MISMATCH(400, "Option Name Mismatch!!"),//
+	ANSWER_REQUIRED(400, "Answer_Required!!");//
 
 	private int code;
 

@@ -12,7 +12,7 @@ import com.example.quiz_1141013.entity.Question;
 import com.example.quiz_1141013.entity.QuestionId;
 
 @Repository
-public interface QuestionDAo extends JpaRepository<Question, QuestionId> {
+public interface QuestionDao extends JpaRepository<Question, QuestionId> {
 
 	@Modifying
 	@Transactional
